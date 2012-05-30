@@ -8,6 +8,7 @@ Group:          Development/Libraries
 License:        GPL+ or Artistic
 URL:            http://search.cpan.org/dist/Test-Pod/
 Source0:        http://www.cpan.org/authors/id/P/PE/PETDANCE/Test-Pod-%{version}.tar.gz
+Source1001: packaging/perl-Test-Pod.manifest 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -26,6 +27,7 @@ Requires:   perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 
 
 %build
+cp %{SOURCE1001} .
 %{__perl} Build.PL  --installdirs vendor
 ./Build
 
@@ -47,6 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
+%manifest perl-Test-Pod.manifest
 %defattr(-,root,root,-)
 %{perl_vendorlib}/Test/*
 %doc %{_mandir}/man3/*.3pm*
