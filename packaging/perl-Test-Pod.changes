@@ -1,3 +1,6 @@
+* Fri Dec  7 00:19:11 UTC 2012 - tracy.graydon@intel.com
+- Fix build failures. Updated to 1.45 to do it. 
+
 * Wed Jul 28 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.42
 - update to 1.42
 
