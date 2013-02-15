@@ -1,0 +1,62 @@
+* Wed Jul 28 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.42
+- update to 1.42
+
+* Tue Jul 20 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.40
+- Change the version dependency
+
+* Wed June 30 2010 Quanxian Wang <quanxian.wang@intel.com>  - 1.40
+- Add %doc before man file entry
+
+* Thu Dec 24 2009 Passion Zhao <passion.zhao@intel.com> - 1.40
+- Update to 1.40
+
+* Wed Feb 27 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.26-4
+- Rebuild for perl 5.10 (again)
+
+* Thu Jan 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.26-3
+- rebuild for new perl
+
+* Thu Dec 20 2007 Tom "spot" Callaway <tcallawa@redhat.com> - 1.26-2
+- license tag fix
+
+* Fri Jul 21 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.26-1
+- Update to 1.26.
+
+* Fri Feb 17 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.24-2
+- Rebuild for FC5 (perl 5.8.8).
+
+* Fri Feb  3 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.24-1
+- Update to 1.24.
+
+* Thu Dec 29 2005 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.22-1
+- Update to 1.22.
+
+* Thu May 12 2005 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.20-3
+- Add dist tag.
+
+* Fri Apr  7 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 1.20-2
+- rebuilt
+
+* Thu Jun 24 2004 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0:1.20-0.fdr.1
+- Update to 1.20.
+
+* Wed May 12 2004 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0:1.16-0.fdr.2
+- Avoid creation of the perllocal.pod file (make pure_install).
+
+* Mon May  3 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.16-0.fdr.1
+- Update to 1.16, dir handling patch applied upstream.
+
+* Fri Apr 30 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.14-0.fdr.1
+- Update to 1.14.
+- Require perl(:MODULE_COMPAT_*).
+- Add patch to avoid warnings from all_pod_files().
+
+* Sun Mar 14 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.12-0.fdr.1
+- Update to 1.12.
+
+* Thu Jan 22 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.08-0.fdr.1
+- Update to 1.08.
+- Use %%{perl_vendorlib}.
+
+* Wed Nov  5 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:0.96-0.fdr.1
+- First build.
