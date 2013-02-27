@@ -45,6 +45,6 @@ find $RPM_BUILD_ROOT -depth -type d -exec rmdir {} \; 2>/dev/null
 %manifest perl-Test-Pod.manifest
 %doc Changes README
 %{perl_vendorlib}/Test/*
-#%{_mandir}/man3/Test::Pod.3pm*
+%doc %{_mandir}/man3/Test::Pod.3pm*
 
 
