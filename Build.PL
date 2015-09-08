@@ -6,17 +6,15 @@ Module::Build->new(
     module_name        => 'Test::Pod',
     license            => 'perl',
     configure_requires => { 'Module::Build' => '0.30', },
-    create_makefile_pl => 'traditional',
     build_requires     => {
-        'File::Spec'    => 0,
-        'Pod::Simple'   => '3.05',
-        'Test::More'    => '0.62',
+        'Module::Build' => '0.30',
+        'Test::More'    => '0.70',
     },
     requires => {
-        'File::Spec'            => 0,
-        'Pod::Simple'           => '3.05',
+        'Pod::Simple'           => '3.07',
+        'Test::More'            => '0.70',,
         'Test::Builder::Tester' => '1.02',
-        'Test::More'            => '0.62',
+        'File::Spec'            => 0,
     },
     meta_merge => {
         resources => {
