@@ -20,15 +20,15 @@ Requires:   perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 %description
 %{summary}.
 
-
 %prep
 %setup -q -n Test-Pod-%{version}
-
 
 %build
 %{__perl} Build.PL  --installdirs vendor
 ./Build
 
+%check
+LC_ALL=C ./Build test
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -37,14 +37,8 @@ find $RPM_BUILD_ROOT -type f -name .packlist -exec rm -f {} ';'
 find $RPM_BUILD_ROOT -type d -depth -exec rmdir {} 2>/dev/null ';'
 chmod -R u+w $RPM_BUILD_ROOT/*
 
-
-%check
-LC_ALL=C ./Build test
-
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(-,root,root,-)
